@@ -15,44 +15,51 @@ a{
 ul {
     list-style-type: none;
 }
+img {
+    display: block;
+}
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
-/* ///////////// */
-/* Header styling */
-/* ///////////// */
-
-
 .container{
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.general-header-container{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e7e9fc
 }
 
+.navigation-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
 
-.header{
-    max-width: 100%;
-    height: 76px;
-    border-bottom: 1px solid #E7E9FC;
+.navigation-list{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
     padding-top: 24px;
     padding-bottom: 24px;
-    padding-left: 156px;
-    padding-right: 156px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
 }
-.header-navigation{
-    display: flex;
-    align-items: center;
-    gap: 76px;
-    justify-content: flex-start;
 
+.address-list{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
+
 .header-logo{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -61,6 +68,7 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .header-logo-span{
@@ -74,11 +82,6 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-decoration: underline;
-}
-
-.navigation-list{
-    display: flex;
-    gap:40px;
 }
 
 .navigation-list .nav-menu {
@@ -107,31 +110,15 @@ ul {
     color: #404bbf;
 }
 
-/* ///////////// */
-/* End of header styling */
-/* ///////////// */
-
-
-
-
-/* ///////////// */
-/* Main part styling */
-/* ///////////// */
-
-.main-header{
+.section-one-container{
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    height: 600px;
     align-items: center;
-    justify-content: center;
+    padding: 188px 0;
     background-color: #2e2f42;
-    
 }
 
-
 .large-title {
-    display: block;
     font-family: inherit;
     max-width: 496px;
     text-align: center;
@@ -144,11 +131,11 @@ ul {
 
 
 .main-button {
-    margin: 50px 0 0 0;
-    padding: 0;
-    width: 169px;
+    display: block;
+    margin: 50px auto;
+    min-width: 169px;
     height: 56px;
-    border: 0px;
+    border: none;
     border-radius: 4px;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
@@ -160,6 +147,9 @@ ul {
     color: #ffffff;
 }
 
+.section-two-container{
+    padding: 120px 0;
+}
 
 .visually-hidden {
     position: absolute;
@@ -172,32 +162,19 @@ ul {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-   }
-
-
-.features-list{
-    max-width: 100%;
-    flex-direction: row;
-    height: 344px;
-    border-bottom: 1px solid #E7E9FC;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    padding-left: 156px;
-    padding-right: 156px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
+
 .feature-list{
     display: flex;
     gap: 24px;
+    flex-basis: calc((100% - 3 * 24px) / 4);
     background-color: #ffffff;
     justify-content: space-between;
-    align-items: center;
 }
 
 .small-header {
     font-family:inherit;
+    margin-bottom: 8px;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -213,17 +190,17 @@ ul {
 }
 
 
-.team-section{
+.section-three-container{
+    padding: 120px 0;
+    background-color: #F4F4FD;
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    height: 732px;
-    background-color: #F4F4FD;   
+    justify-content: center;
+
 }
 
 .team-header{
-    display: block;
-    margin-top: 120px;
+    margin-bottom: 72px;
     font-size: 36px;
     font-family: inherit;
     font-weight: 700;
@@ -238,25 +215,20 @@ ul {
     display: flex;
     flex-direction: row;
     align-content: center;
-    margin-top: 60px;
-    padding-left: 156px;
-    padding-right: 156px;
+    flex-basis: calc((100% - 72px) / 4);
     gap: 24px;
     background-color: #F4F4FD;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
 }
 
 .card{
-    display: block;
+    padding: 32px 0;
     border-radius: 0 0 4px 4px;
     overflow: hidden;
 }
-.team-image{
-    display: block;
-    max-width: 100%;
-}
+
 
 .card-content{
     margin: 0;
@@ -264,23 +236,16 @@ ul {
     background-color: #ffffff;
     text-align: center;
 }
+.team-member-name{
+    margin-bottom: 8px;
+}
 
-
-
-.utility-section{
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    height: 1240px;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    padding-left: 156px;
-    padding-right: 156px;
-    background-color: #ffffff;   
+.section-four-container{
+    padding: 120px 0 120px 0;
 }
 
 .large-utility-header{
-    display: block;
+    margin-bottom: 72px;
     font-size: 36px;
     font-family: inherit;
     font-weight: 700;
@@ -296,8 +261,9 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-between;
-    margin-top: 60px;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
+    flex-basis: calc((100% - 48px) / 3);
     justify-content: space-between;
     align-items: center;
 }
@@ -314,26 +280,16 @@ ul {
 }
 .utility-card-content{
     margin: 0;
-    padding: 30px;
+    padding: 32px 16px;
     background-color: #ffffff;
     text-align: left;
     border-left: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
 }
-
-
-/* ///////////// */
-/* End of main part styling */
-/* ///////////// */
-
-
-
-/* ///////////// */
-/* Footer styling */
-/* ///////////// */
-
-
+.utility-header{
+    margin-bottom: 8px;
+}
 
 .page-footer{
     max-width: 100%;
@@ -352,6 +308,8 @@ ul {
 }
 
 .footer-logo{
+    display: inline-block;
+    margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -372,12 +330,3 @@ ul {
     letter-spacing: 0.02em;
     color: #F4F4FD;
 }
-
-/* ///////////// */
-/* End of footer styling */
-/* ///////////// */
-
-
-/* ///////////// */
-/* End of document */
-/* ///////////// */
