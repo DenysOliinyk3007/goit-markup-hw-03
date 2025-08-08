@@ -182,6 +182,9 @@ img {
     justify-content: space-between;
 }
 
+.feature-list{
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
 .small-header {
     font-family:inherit;
     margin-bottom: 8px;
