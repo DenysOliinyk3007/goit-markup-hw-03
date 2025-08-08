@@ -281,12 +281,6 @@ img {
     align-items: center;
 }
 
-.utility-card{
-    display: block;
-    border-radius: 0 0 4px 4px;
-    overflow: hidden;
-}
-
 .utility-image{
     display: block;
     max-width: 100%;
@@ -296,9 +290,8 @@ img {
     padding: 32px 16px;
     background-color: #ffffff;
     text-align: left;
-    border-left: 1px solid #E7E9FC;
-    border-right: 1px solid #E7E9FC;
-    border-bottom: 1px solid #E7E9FC;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .utility-header{
     margin-bottom: 8px;
