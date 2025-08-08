@@ -177,12 +177,11 @@ img {
 .feature-list{
     display: flex;
     gap: 24px;
-    flex-basis: calc((100% - 3 * 24px) / 4);
     background-color: #ffffff;
     justify-content: space-between;
 }
 
-.feature-list{
+.feature-item{
     flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .small-header {
@@ -231,13 +230,16 @@ img {
     flex-direction: row;
     align-content: center;
     flex-basis: calc((100% - 72px) / 4);
-    border-radius: 0 0 4px 4px;
     gap: 24px;
     background-color: #F4F4FD;
     justify-content: center;
     align-items: center;
-
 }
+
+.team-list-inner{
+    border-radius: 0 0 4px 4px;
+}
+
 .card-content{
     margin: 0;
     padding: 32px 0;
