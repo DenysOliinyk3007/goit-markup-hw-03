@@ -231,28 +231,24 @@ img {
     flex-direction: row;
     align-content: center;
     flex-basis: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px;
     gap: 24px;
     background-color: #F4F4FD;
     justify-content: center;
     align-items: center;
 
 }
-
-.card{
-    padding: 32px 0;
-    border-radius: 0 0 4px 4px;
-    overflow: hidden;
-}
-
-
 .card-content{
     margin: 0;
-    padding: 30px;
+    padding: 32px 0;
     background-color: #ffffff;
     text-align: center;
 }
 .team-member-name{
     margin-bottom: 8px;
+}
+.team-text{
+    text-align: center
 }
 
 .section-four{
