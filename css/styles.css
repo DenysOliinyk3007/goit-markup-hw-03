@@ -29,10 +29,14 @@ img {
     padding-left: 15px;
     padding-right: 15px;
 }
-.general-header-container{
+.header-container{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #e7e9fc
+    
+}
+
+.header{
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .navigation-class{
@@ -47,9 +51,14 @@ img {
     gap: 40px;
     justify-content: center;
     align-items: center;
+}
+
+.item{
     padding-top: 24px;
     padding-bottom: 24px;
 }
+
+
 
 .address-list{
     display: flex;
